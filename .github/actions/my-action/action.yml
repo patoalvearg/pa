@@ -1,10 +1,16 @@
 name: "Mi acción"
 description: "Probar mi acción"
 
+inputs:
+  message:
+    description: "Mensaje para imprimir"
+    required: true
+    default: "Hola"
+
 runs: 
   using: "composite"
 
   steps:
     - name: Hola Mundo
-      run: echo "Hola Mundo"
+      run: echo " Hola {{inputs.message}}"
       shell: bash
