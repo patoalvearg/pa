@@ -24,4 +24,11 @@ jobs:
       - name: Version Node
         run: node --version
       
-      
+      - name: Setup PHP Action
+        uses: shivammathur/setup-php@2.35.5
+        with:
+          php-version: 8.3
+
+      - name: Version PHP
+        run: php --version
+        
