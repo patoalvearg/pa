@@ -18,9 +18,10 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v5.0.0
+        with:
+          node-version: latest
 
       - name: Version Node
         run: node --version
       
-      - name: instalar npm
-        run: npm install
+      
